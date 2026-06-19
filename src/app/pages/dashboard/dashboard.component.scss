@@ -1777,26 +1777,19 @@ body {
 .button5,
 .button6,
 .button7 {
-
   transition: all .3s ease;
   cursor: pointer;
 }
-.button:active,
-.button2:active,
-.button3:active,
-.button4:active,
-.button5:active,
-.button6:active,
-.button7:active {
 
-  transform: scale(0.92);
-
+.active-button {
   background: rgba(0,66,221,.45);
-
   border: 1px solid rgba(255,255,255,.4);
 
   box-shadow:
-    0 0 15px rgba(59,130,246,.8);
+    0 0 15px rgba(59,130,246,.8),
+    0 0 30px rgba(59,130,246,.4);
 
   border-radius: 18px;
+
+  transition: all .3s ease;
 }

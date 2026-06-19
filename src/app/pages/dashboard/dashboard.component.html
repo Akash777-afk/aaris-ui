@@ -68,29 +68,59 @@
     </div>
   </div>
 
-  <div class="sidebar">
-    <div class="button" id="buttonContainer">
-      <img class="icon" src="\assets\Icon-12.svg" alt="" />
-    </div>
-    <div class="button2">
-      <img class="icon" src="\assets\Icon-9.svg" alt="" />
-    </div>
-    <div class="button3">
-      <img class="icon" src="\assets\Icon-14.svg" alt="" />
-    </div>
-    <div class="button4">
-      <img class="icon" src="\assets\Icon-11.svg" alt="" />
-    </div>
-    <div class="button5">
-      <img class="icon" src="\assets\Icon-10.svg" alt="" />
-    </div>
-    <div class="button6">
-      <img class="icon" src="\assets\Icon-7.svg" alt="" />
-    </div>
-    <div class="button7">
-      <img class="icon" src="\assets\Icon-4.svg" alt="" />
-    </div>
+ <div class="sidebar">
+
+  <div
+    class="button"
+    [class.active-button]="activeButton === 1"
+    (click)="setActiveButton(1)">
+    <img class="icon" src="\assets\Icon-1.svg" alt="" />
   </div>
+
+  <div
+    class="button2"
+    [class.active-button]="activeButton === 2"
+    (click)="setActiveButton(2)">
+    <img class="icon" src="\assets\Icon-2.svg" alt="" />
+  </div>
+
+  <div
+    class="button3"
+    [class.active-button]="activeButton === 3"
+    (click)="setActiveButton(3)">
+    <img class="icon" src="\assets\Icon-3.svg" alt="" />
+  </div>
+
+  <div
+    class="button4"
+    [class.active-button]="activeButton === 4"
+    (click)="setActiveButton(4)">
+    <img class="icon" src="\assets\Icon-4.svg" alt="" />
+  </div>
+
+  <div
+    class="button5"
+    [class.active-button]="activeButton === 5"
+    (click)="setActiveButton(5)">
+    <img class="icon" src="\assets\Icon-5.svg" alt="" />
+  </div>
+
+  <div
+    class="button6"
+    [class.active-button]="activeButton === 6"
+    (click)="setActiveButton(6)">
+    <img class="icon" src="\assets\Icon-7.svg" alt="" />
+  </div>
+
+  <div
+    class="button7"
+    [class.active-button]="activeButton === 7"
+    (click)="setActiveButton(7)">
+    <img class="icon" src="\assets\Icon-8.svg" alt="" />
+  </div>
+
+</div>
+  
 
   <div class="rectangle-parent">
     <div class="group-child"></div>
