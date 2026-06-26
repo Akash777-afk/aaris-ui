@@ -1,0 +1,44 @@
+<!-- LOADING STATE -->
+<div class="card" *ngIf="isLoading">
+  <div class="header">
+    <div class="skeleton circle"></div>
+    <div class="skeleton text-short"></div>
+  </div>
+  <div class="divider"></div>
+  <div class="row">
+    <div class="skeleton text-medium"></div>
+    <div class="skeleton text-tiny"></div>
+  </div>
+  <div class="row">
+    <div class="skeleton text-medium"></div>
+    <div class="skeleton text-tiny"></div>
+  </div>
+</div>
+
+<!-- ERROR STATE -->
+<div class="card" *ngIf="hasError && !isLoading">
+  <div class="header">
+    <div class="icon-wrapper">⚠</div>
+    <span class="title">Services</span>
+  </div>
+  <div class="divider"></div>
+  <p class="error-text">Failed to load data.</p>
+  <button class="retry-btn" (click)="loadData()">Retry</button>
+</div>
+
+<!-- SUCCESS STATE -->
+<div class="card" *ngIf="data && !isLoading">
+  <div class="header">
+    <div class="icon-wrapper">⚙</div>
+    <span class="title">Services</span>
+  </div>
+  <div class="divider"></div>
+  <div class="row">
+    <span class="label">Down</span>
+    <span class="value">{{ data.down }}</span>
+  </div>
+  <div class="row">
+    <span class="label">At Risk</span>
+    <span class="value">{{ data.atRisk }}</span>
+  </div>
+</div>
