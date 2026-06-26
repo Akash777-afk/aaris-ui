@@ -8,7 +8,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "node --openssl-legacy-provider ./node_modules/@angular/cli/bin/ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

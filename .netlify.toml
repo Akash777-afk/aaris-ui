@@ -1,7 +1,0 @@
-[build]
-command = "npm run build"
-publish = "dist/aaris-ui"
-
-[build.environment]
-NODE_VERSION = "18"
-NODE_OPTIONS = "--openssl-legacy-provider"
